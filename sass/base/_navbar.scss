@@ -1,0 +1,38 @@
+@use '../utils/button'as index;
+header{
+    display: flex;
+    justify-content: space-between;
+    background:orange;
+    align-items: center;
+    padding: 15px;
+    nav {
+      img{
+         width: 200px;
+      }
+       p{
+        font-size: 24px;
+        font-weight: 600;
+       }
+       ul{
+        display: flex;
+        list-style-type: none;
+        font-size: 18px;
+        gap: 40px;
+
+        li a{
+          text-decoration: none;
+       }
+       li a:hover{
+          background: white;
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          transition: .2s;
+          border-radius: 10px;
+       }
+ }
+    button{
+      @include index.btn(red,16px,10px ,20px,1px solid green ,white)
+ }
+    } 
+}
